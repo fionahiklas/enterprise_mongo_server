@@ -33,3 +33,11 @@ req: /home/fiona/wd/dwp/cis/enterprise_mongo_server/pki/reqs/mongoserver.req
 key: /home/fiona/wd/dwp/cis/enterprise_mongo_server/pki/private/mongoserver.key
 
 ``` 
+
+Remove the passphrase so that the project can be shared
+
+```
+openssl rsa -in mongoserver.key -out mongoserver-unenc.key
+```
+
+
